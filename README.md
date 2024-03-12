@@ -1,71 +1,42 @@
-# Getting Started with Create React App
+# ERP System Project Documentation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This ERP (Enterprise Resource Planning) system is designed to manage products, orders, and delivery status for a business. The application consists of several key functionalities:
 
-In the project directory, you can run:
+1. **Dashboard**: Provides an overview of important metrics, including the total number of products, total number of orders, highest cost of products, and the least cost of products.
 
-### `npm start`
+2. **Products Management**: Allows users to add, manage, and view details of products. Users can input product information such as name, category, price, and stock quantity. The added products are displayed in a list format.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **Orders Management**: Allows users to view information about orders and check the delivery status. The orders are displayed in a table, showing details such as order ID, customer name, order date, and status. Additionally, a calendar is implemented to visualize the expected delivery dates.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Dashboard Functionality
 
-### `npm test`
+The dashboard provides a summarized view of the business's key metrics:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Total Number of Products**: Displays the total count of products available in the system.
+- **Total Number of Orders**: Shows the total count of orders placed.
+- **Highest Cost**: Indicates the highest cost among all the available products.
+- **Least Cost**: Displays the least cost among all the available products.
 
-### `npm run build`
+## Products Management Functionality
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The Products Management section allows users to:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Add Products**: Users can input product details such as name, category, price, and stock quantity using a form.
+- **View Products List**: A list displays all the added products with details like name, category, price, and stock quantity.
+- **Delete Products**: Users can delete products from the list.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Orders Management Functionality
 
-### `npm run eject`
+The Orders Management section provides functionality to:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **View Orders List**: Displays a table containing information about each order, including order ID, customer name, order date, and status.
+- **Delete Orders**: Allows users to delete orders from the list.
+- **Calendar Display**: A calendar visualizes the expected delivery dates for the orders.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Local Storage Integration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+To persist data between sessions, the application utilizes the browser's local storage. Products added and modified are saved to local storage, ensuring data persistence even if the user refreshes the page or closes the browser.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
+This ERP system is designed for simplicity and ease of use, providing essential functionalities for managing products, orders, and delivery status.
